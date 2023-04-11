@@ -6,6 +6,7 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 import lombok.AccessLevel;
 import lombok.NoArgsConstructor;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.edge.EdgeOptions;
 import org.openqa.selenium.remote.Browser;
@@ -31,7 +32,10 @@ public final class DriverFactory {
             } else {
                 ChromeOptions options = new ChromeOptions();
                 options.addArguments("--remote-allow-origins=*");
+                options.addArguments("headless");
+                
                 driver = WebDriverManager.chromedriver().capabilities(options).create();
+//                driver = new ChromeDriver();
                 //sometimes there might be some issue in browser invocation here aswell, so throw exception commonly in init() method
             }
         } else {//edge
