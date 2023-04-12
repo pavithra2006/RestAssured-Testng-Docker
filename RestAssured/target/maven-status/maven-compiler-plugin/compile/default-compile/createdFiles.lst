@@ -1,0 +1,16 @@
+com/employee/util/PropertiesUtils.class
+com/employee/util/ApiUtils.class
+com/employee/reports/ExtentManager.class
+com/employee/enums/CategoryType.class
+com/employee/pojo/Employee.class
+com/employee/constants/FrameworkConstants.class
+com/employee/constants/FrameworkConstantsSingleton.class
+com/employee/listerners/ListenerClass.class
+com/employee/util/RandomUtils.class
+com/employee/util/FakerUtils.class
+com/employee/reports/ExtentLogger.class
+com/employee/reports/ExtentReporter.class
+com/employee/pojo/Employee$EmployeeBuilder.class
+com/employee/enums/ConfigProperties.class
+com/employee/annontations/FrameworkAnnotation.class
+com/employee/requestBuilder/RequestBuilder.class
