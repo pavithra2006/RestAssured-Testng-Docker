@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <listeners>
+        <listener class-name="com.employee.listerners.ListenerClass"></listener>
+    </listeners>
+    <!--    <test parallel="classes" thread-count="5" name="Employee">-->
+    <test name="Employee">
+        <classes>
+            <class name="com.employee.tests.GetTests">
+                <methods>
+                    <include name="getEmployee"/>
+                    <include name="getEmployeeByID"/>
+                    <include name="postmanGetCall"/>
+                    <include name="postmanGetAllWorkspaces"/>
+                </methods>
+            </class>
+            <class name="com.employee.tests.PostTests">
+                <methods>
+                    <include name="createEmployee"/>
+                    <include name="createEmployeeUsingJSONObject"/>
+                    <include name="createEmployeeFromExternalFile"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
