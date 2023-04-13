@@ -3,7 +3,6 @@ package com.employee.constants;
 import lombok.AccessLevel;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
-
 import java.util.Objects;
 
 @Getter
